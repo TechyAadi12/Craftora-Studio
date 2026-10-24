@@ -21,7 +21,7 @@ export default function ProjectLabsPage() {
             Selected <span className="gradient-accent">Projects</span>
           </h1>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            A collection of projects with links to their live demos.
+            A selection of digital projects. Explore each live experience or browse its source on GitHub.
           </p>
 
         </div>

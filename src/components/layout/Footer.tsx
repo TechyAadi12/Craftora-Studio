@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { projectsData } from "@/data/projects";
 import { Code2, ArrowUpRight, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -70,16 +71,26 @@ export function Footer() {
               Projects
             </h3>
             <ul className="space-y-2.5 text-sm">
-              {siteConfig.footerLinks.projects.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
+              {projectsData.map((project) => (
+                <li key={project.liveDemoUrl}>
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-slate-400 hover:text-white transition-colors"
                   >
-                    {link.label}
-                  </Link>
+                    {project.title}
+                  </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/project-labs"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  View all projects
+                </Link>
+              </li>
             </ul>
           </div>
 

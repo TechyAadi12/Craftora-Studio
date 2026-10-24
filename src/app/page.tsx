@@ -1,7 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { servicesData } from "@/data/services";
+import { projectsData } from "@/data/projects";
 import { Hero3DVisual } from "@/components/home/Hero3DVisual";
+import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectCarousel } from "@/components/projects/ProjectCarousel";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   ArrowRight,
@@ -205,7 +208,7 @@ export default function HomePage() {
             badgeVariant="accent"
             title="Hands-On Projects with"
             titleHighlight="Live Browser Demos"
-            description="Browse selected projects and open their live demos."
+            description="Explore featured projects, open a live demo, or browse the source on GitHub."
           />
           <Link
             href="/project-labs"
@@ -216,9 +219,16 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <p className="border-y border-dashed border-slate-700 py-8 text-center text-sm text-slate-400">
-          Projects will appear here as they are added to the catalog.
-        </p>
+        <ProjectCarousel>
+          {projectsData.map(project => (
+            <div
+              key={project.title}
+              className="w-full shrink-0 snap-start md:w-[calc((100%_-_1.5rem)_/_2)] lg:w-[calc((100%_-_3rem)_/_3)]"
+            >
+              <ProjectCard project={project} />
+            </div>
+          ))}
+        </ProjectCarousel>
       </section>
 
       {/* 6. How We Work Section */}

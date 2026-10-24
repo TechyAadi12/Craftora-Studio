@@ -26,9 +26,6 @@ export const siteConfig = {
       { label: "Business Automation", href: "/services/business-automation" },
       { label: "All Services Overview", href: "/services" },
     ],
-    projects: [
-      { label: "Projects", href: "/project-labs" },
-    ],
     company: [
       { label: "About Us", href: "/about" },
       { label: "Request a Quote", href: "/contact" },
