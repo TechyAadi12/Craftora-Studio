@@ -71,7 +71,7 @@ export function Footer() {
               Projects
             </h3>
             <ul className="space-y-2.5 text-sm">
-              {projectsData.map((project) => (
+              {projectsData.slice(0, 4).map((project) => (
                 <li key={project.liveDemoUrl}>
                   <a
                     href={project.liveDemoUrl}
@@ -115,24 +115,28 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div>
+        <div className="pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-slate-500">
+          <p>
             &copy; {currentYear} {siteConfig.name}. All rights reserved. Built with Next.js & TypeScript.
-          </div>
-          <div className="flex items-center gap-5">
-            {siteConfig.footerLinks.social.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-1"
-              >
-                <span>{social.label}</span>
-                <ArrowUpRight className="w-3 h-3" />
-              </a>
-            ))}
-          </div>
+          </p>
+          <nav aria-label="Social media links">
+            <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              {siteConfig.footerLinks.social.map((social) => (
+                <li key={social.label}>
+                  <a
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${social.label} (opens in a new tab)`}
+                    className="text-slate-400 hover:text-blue-400 focus-visible:text-blue-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400 transition-colors flex items-center gap-1"
+                  >
+                    <span>{social.label}</span>
+                    <ArrowUpRight aria-hidden="true" className="w-3 h-3" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>

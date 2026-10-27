@@ -90,41 +90,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. Value Proposition Section */}
-      <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-8 rounded-3xl bg-slate-900/40 border border-white/[0.08] backdrop-blur-sm space-y-3 relative group hover:border-blue-500/30 transition-all">
-            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
-              <Layers className="w-6 h-6" />
-            </div>
-            <h3 className="text-xl font-bold text-white pt-1">Practical Software Solutions</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              We build fast, maintainable websites, custom internal tools, and high-density analytics dashboards designed around your exact operational bottlenecks.
-            </p>
-          </div>
-
-          <div className="p-8 rounded-3xl bg-slate-900/40 border border-white/[0.08] backdrop-blur-sm space-y-3 relative group hover:border-indigo-500/30 transition-all">
-            <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-              <Terminal className="w-6 h-6" />
-            </div>
-            <h3 className="text-xl font-bold text-white pt-1">Free Developer Projects</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              A growing catalog of developer projects with links to their live demos.
-            </p>
-          </div>
-
-          <div className="p-8 rounded-3xl bg-slate-900/40 border border-white/[0.08] backdrop-blur-sm space-y-3 relative group hover:border-purple-500/30 transition-all">
-            <div className="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
-              <Terminal className="w-6 h-6" />
-            </div>
-            <h3 className="text-xl font-bold text-white pt-1">Project Portfolio</h3>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Browse selected developer projects and open their live demos.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* 3. Services Preview Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">

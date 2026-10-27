@@ -10,8 +10,8 @@ export const siteConfig = {
   description: "Modern digital software services firm delivering production web apps, custom software, business automation, and curated developer projects.",
   url: "https://craftorastudio.com",
   ogImage: "https://craftorastudio.com/og-image.jpg",
-  contactEmail: "hello@craftorastudio.com",
-  office: "San Francisco, CA & Remote Worldwide",
+  contactEmail: "pandeyaadi3112@gmail.com",
+  office: "Lucknow, Uttar Pradesh",
   navItems: [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
@@ -33,9 +33,9 @@ export const siteConfig = {
       { label: "Terms of Service", href: "/terms-of-service" },
     ],
     social: [
-      { label: "GitHub", href: "https://github.com", external: true },
-      { label: "LinkedIn", href: "https://linkedin.com", external: true },
-      { label: "Twitter / X", href: "https://x.com", external: true },
+      { label: "GitHub", href: "https://github.com/TechyAadi12", external: true },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/roshan-pandey-7a6254259/", external: true },
+      { label: "Instagram", href: "https://www.instagram.com/craftorastudio04/", external: true },
     ]
   }
 };
